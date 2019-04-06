@@ -4,11 +4,12 @@
 
 
 
-/*спецификация*/
+
 body
+	background-color: red
 	box-sizing: border-box
 	overflow-x: hidden
-	color: $text
+	color: $default-color
 	font-family: $default-font
 	font-weight: 400
 	line-height: 1.6
@@ -23,11 +24,102 @@ a
 	text-decoration: none
 	&:hover
 		text-decoration: none
+		color: $accent
 
 .img-responsive
 	max-width: 100%
 	height: auto
 	display: block
+
+
+
+
+nav
+	width: 100%
+	position: fixed
+	top: 0
+	.navigation
+		background-color: $white
+		padding-top: 1.5%
+		padding-bottom: 1.5%
+		&__phone
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			span
+				padding-right: 10%
+				font-size: 20px
+			a
+				&:hover
+					text-decoration: none
+				i
+					color: $default-color
+					font-size: 20px
+					&:hover
+						transition: all .3s ease
+						color: $accent
+header
+	section
+		background-size: cover
+		background-position:  center
+		background-repeat: no-repeat
+		.welcome
+			padding-top: 20%
+			padding-bottom: 20%
+			text-align: center
+			h3
+				color: $white
+				font-size: 56px
+				font-family: "LatoLight-ex"
+				font-weight: 200
+				text-transform: uppercase
+			h2
+				color: $white
+				font-size: 140px
+				font-family: "MontserratLight-ex"
+				font-weight: 200
+				text-transform: uppercase
+			h5
+				color: $white
+				font-size: 21px
+				font-family: "LatoRegular-ex"
+				font-weight: 200
+				text-transform: uppercase
+
+
+
+
+
+
+.hamburger-box
+	width: 30px
+	height: 30px
+	.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before
+		background-color: $default-color
+		width: 30px
+		height: 2px
+
+
+
+
+
+#my-menu
+	opacity: 0
+	.mm-panel
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+	a
+		&:hover
+			text-decoration: none
+			color: $accent
+
+
+.hamburger
+	margin-right: 4%
+	padding: 0
+
 
 
 

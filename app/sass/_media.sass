@@ -8,13 +8,32 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  nav
+  	width: 100%
+  	position: fixed
+  	top: 0
+  	.navigation
+      &__phone
+        justify-content: center
+      &__menu
+        display: flex
+        justify-content: flex-end
 
+  header
+  	section
+  		.welcome
+  			padding-top: 35%
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥576px
 +media-breakpoint-down(xs)
-
+  header
+    section
+      h3
+        font-size: 40px !important
+      h2
+        font-size: 80px !important
 
 /*==========  Mobile First  ==========*/
 

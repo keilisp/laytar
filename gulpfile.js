@@ -1,7 +1,7 @@
-var 	syntax        = 'sass', // Syntax: sass or scss;
+var syntax        = 'sass', // Syntax: sass or scss;
 		gulpversion   = '4'; // Gulp version: 3 or 4
 
-var 	gulp          = require('gulp'),
+var gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
 		sass          = require('gulp-sass'),
 		browserSync   = require('browser-sync'),
@@ -12,7 +12,7 @@ var 	gulp          = require('gulp'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require('gulp-notify'),
 		rsync         = require('gulp-rsync'),
-	 	open 		  = require('gulp-open');
+	 	open 		  		= require('gulp-open');
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -39,6 +39,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/mmenu/dist/jquery.mmenu.all.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

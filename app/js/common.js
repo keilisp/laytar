@@ -1,5 +1,16 @@
+
+$(window).on('load', function(){$("#my-menu").css('opacity','1');});
 $(function() {
-
-	// Custom JS
-
+  $(document).ready(function() {
+    $("#my-menu").mmenu({
+      "extensions": [
+        "position-right",
+        "border-none",
+      ],
+      navbar: {
+        title: ''
+      },
+      "slidingSubmenus": false
+    });
+  });
 });
