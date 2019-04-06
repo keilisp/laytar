@@ -6,7 +6,6 @@
 
 
 body
-	background-color: red
 	box-sizing: border-box
 	overflow-x: hidden
 	color: $default-color
@@ -38,6 +37,7 @@ nav
 	width: 100%
 	position: fixed
 	top: 0
+	z-index: 999
 	.navigation
 		background-color: $white
 		padding-top: 1.5%
@@ -50,8 +50,6 @@ nav
 				padding-right: 10%
 				font-size: 20px
 			a
-				&:hover
-					text-decoration: none
 				i
 					color: $default-color
 					font-size: 20px
@@ -88,10 +86,28 @@ header
 
 
 
-
-
+.aboutme
+	background-repeat: no-repeat
+	background-position: 100% 100%
+	padding-top: 10%
+	padding-bottom: 10%
+	.story
+		&__short
+			h3
+				padding: 0 0% 0 35%
+				font-family: "LatoLight-ex"
+				font-size: 55px
+				text-transform: uppercase
+				margin-bottom: 3%
+				span
+					border-bottom: 1px solid $default-color
+		&__meeting
+			p
+				padding: 0 15%
+				font-size: 19px
 
 .hamburger-box
+	pr
 	width: 30px
 	height: 30px
 	.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before
@@ -117,8 +133,37 @@ header
 
 
 .hamburger
-	margin-right: 4%
 	padding: 0
+	margin-right: 20px
+
+
+.accordion_container
+
+.accordion_head
+	font-family: "LatoLight-ex"
+	text-transform: uppercase
+  background-color: transparent
+  margin-bottom: 3%
+	padding: 0 0 0 10%
+	padding-bottom: 2%
+  font-weight: 200
+	&:hover
+	  cursor: pointer
+	b
+		color: $default-color
+		font-size: 20px
+
+.accordion_body
+  background: transparent
+  p
+		padding: 0 0% 0 10%
+		font-size: 23px
+    padding: 18px 5px
+    margin: 0px
+
+.plusminus
+  float: right
+
 
 
 
