@@ -40,6 +40,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/mmenu/dist/jquery.mmenu.all.js',
+		'app/libs/SlipHover/src/jquery.sliphover.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
