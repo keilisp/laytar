@@ -1,0 +1,3 @@
+[submodule "SlipHover"]
+	path = app/libs/SlipHover
+	url = https://github.com/wayou/SlipHover.git
