@@ -1,7 +1,5 @@
 # Laytar
 
----
-
 ## Description
 
 > Simple site template for smithy using HTML, CSS and JavaScript
